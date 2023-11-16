@@ -1,30 +1,36 @@
 alert('Essa pagina contem virus' );
 
 function tocaSomPom(){document.querySelector('#som_tecla_pom').play();};
-document.querySelector('.tecla_pom').onclick=tocaSompom ;
+document.querySelector('.tecla_pom').onclick=tocaSomPom ;
 
 function tocaSomClap(){document.querySelector('#som_tecla_clap').play();};
-document.querySelector('.tecla_clap').onclick=tocaSomclap;
+document.querySelector('.tecla_clap').onclick=tocaSomClap;
 
 function tocaSomTim(){document.querySelector('#som_tecla_tim').play();};
-document.querySelector('.tecla_tim').onclick=tocaSomtim;
+document.querySelector('.tecla_tim').onclick=tocaSomTim;
 
 function tocaSomPuff(){document.querySelector('#som_tecla_puff').play();};
-document.querySelector('.tecla_puff').onclick=tocaSompuff ;
+document.querySelector('.tecla_puff').onclick=tocaSomPuff ;
 
 function tocaSomSplash(){document.querySelector('#som_tecla_splash').play();};
-document.querySelector('.tecla_splash').onclick=tocaSomsplash;
+document.querySelector('.tecla_splash').onclick=tocaSomSplash;
 
 function tocaSomToim(){document.querySelector('#som_tecla_toim').play();};
-document.querySelector('.tecla_toim').onclick=tocaSomtoim ;
+document.querySelector('.tecla_toim').onclick=tocaSomToim ;
 
 function tocaSomPsh(){document.querySelector('#som_tecla_psh').play();};
-document.querySelector('.tecla_psh').onclick=tocaSompsh;
+document.querySelector('.tecla_psh').onclick=tocaSomPsh;
 
 function tocaSomTic(){document.querySelector('#som_tecla_tic').play();};
-document.querySelector('.tecla_tic').onclick=tocaSomtic;
+document.querySelector('.tecla_tic').onclick=tocaSomTic;
 
 function tocaSomTom(){document.querySelector('#som_tecla_tom').play();};
-document.querySelector('.tecla_tom').onclick=tocaSomtom ;
+document.querySelector('.tecla_tom').onclick=tocaSomTom ;
 
-const Listadeteclas=document.querySelectorAll('.tecla')
+const ListaDeTeclas=document.querySelectorAll('.tecla');
+
+let contador =0;
+ while(contador < ListaDeTeclas.length) {ListaDeTeclas['0'].onclick=tocaSomPom;
+ contador = contador +1;
+ console.log(contador);
+}
